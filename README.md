@@ -20,5 +20,5 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker
 
 
-Mosquitto:
+# Mosquitto:
 mosquitto_sub -t 'test_mqtt' -v
