@@ -11,9 +11,13 @@ sudo reboot
 
 sudo rm -f /etc/docker/daemon.json
 
+sudo nano /etc/docker/daemon.json
+
 {
  "registry-mirrors": ["https://mirror.gcr.io", "https://daocloud.io", "https://c.163.com/", "https://registry.docker-cn.com"]
 }
+
+
 
 sudo systemctl daemon-reload
 
