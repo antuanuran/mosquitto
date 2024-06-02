@@ -10,12 +10,12 @@ services:
           memory: 256M
     security_opt:
       - no-new-privileges:true
-    volumes:
-      - /home/ubuntu/docker/mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf
-      - /home/ubuntu/docker/mosquitto/config/pwfile:/mosquitto/config/pwfile
-      - /home/ubuntu/docker/mosquitto/data:/mosquitto/data
-      - /home/ubuntu/docker/mosquitto/log:/mosquitto/log
+#    volumes:
+#      - /home/ubuntu/docker/mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf
+#      - /home/ubuntu/docker/mosquitto/config/pwfile:/mosquitto/config/pwfile
+#      - /home/ubuntu/docker/mosquitto/data:/mosquitto/data
+#      - /home/ubuntu/docker/mosquitto/log:/mosquitto/log
     ports:
-      - "1883:1883"
+      - "1884:1883"
       - "9001:9001"
 
