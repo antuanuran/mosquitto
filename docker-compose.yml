@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  mosquitto:
+    container_name: mosquitto
+    image: eclipse-mosquitto:latest
+    restart: always
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+    security_opt:
+      - no-new-privileges:true
+    ports:
+      - "1883:1883"
