@@ -17,12 +17,12 @@ sudo nano /etc/docker/daemon.json
  "registry-mirrors": ["https://mirror.gcr.io", "https://daocloud.io", "https://c.163.com/", "https://registry.docker-cn.com"]
 }
 
-
-
 sudo systemctl daemon-reload
 
 sudo systemctl restart docker
 
 
 # Mosquitto:
+sudo apt  install mosquitto
+sudo apt  install mosquitto-clients
 mosquitto_sub -t 'test_mqtt' -v
